@@ -1,0 +1,11 @@
+
+.custom-component {
+
+    :root {
+        --custom-component-back-color: #ebebeb;
+        --custom-component-fore-color: #212121;
+    }
+
+    background-color: var(--custom-component-back-color);
+    color: var(--custom-component-fore-color);
+}
