@@ -1,6 +1,4 @@
-# preact-default-boilerplate
-
-![Lighthouse-Badge](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen.svg)
+# @klondike/preactjs-component
 
 ## Documentation
 - This is a custom component template for [preact-cli](https://github.com/developit/preact-cli).
@@ -16,15 +14,9 @@ $ npm install
 $ npm run dev
 ```
 
-Development server runs on port `8080`. If the default port is already in use on your machine it will start the development server on a random port.
-
 ## Commands
 
-- `npm run start`: Runs `serve` or `dev`, depending on `NODE_ENV` value. Defaults to `dev server`
-
-- `npm run dev`: Run a development, HMR server
-
-- `npm run serve`: Run a production-like server
+- `npm run start`: Runs webpack build with the watch option
 
 - `npm run build`: Production-ready build
 
