@@ -8,7 +8,7 @@
 
 ``` bash
 $ npm install -g preact-cli
-$ preact create @klondike/preactjs-component my-project
+$ preact create klondike-js/preactjs-component my-project
 $ cd my-project
 $ npm install
 $ npm run dev
