@@ -4,8 +4,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
+    publicPath: '/build/'
   },
+  resolve: {      
+    alias: {          
+      'preact': path.resolve(__dirname, './node_modules/preact'),
+      'preact-compat': path.resolve(__dirname, './node_modules/preact-compat')    
+    }  
+  }, 
   module: {
     rules: [
       {
@@ -22,6 +29,11 @@ module.exports = {
     ]
   },
   externals: {
-    'preact': 'commonjs preact'
+    preact: {          
+        commonjs: "preact",          
+        commonjs2: "preact",          
+        amd: "Preact",          
+        root: "Preact"      
+    }
   }
 };
